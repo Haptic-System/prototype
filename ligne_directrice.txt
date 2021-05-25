@@ -1,0 +1,31 @@
+Première étape :
+faire l'affichage des signaux via les "graphiques glissants" avec les signaux suivants :
+-après le com série dans l'ordinateur
+-après le filtre digital dans l'ordinateur
+(-faire une soustraction de ces deux signaux ?)
+-plus tard entre l'ampli et le filtre analogique
+-plus tard entre le filtre analogique et l'Arduino
+mettre ces courbes dans un fichier d'enregistrement.
+
+Deuxième étape :
+faire un test du filtre digital pour quantifier son effiacité avec des valeurs d'entrée "test" ce qui permettrait de calculer directement les valeurs de sortie
+
+Troisième étape :
+fiabiliser le transfert des données de l'Arduino vers l'ordinateur en envoyant les données en binaire.
+ajouter des correcteurs d'erreur en CRC (à voir avec les bibliothèques disponibles)
+
+Quatrième étape :
+entre l'ADC et la com serie de l'Arduino, envoyer des données en rectangulaire qui permettent de définir à parti de quand on commence et on enregistre les données. 
+ceci permet par la suite de définir dans les valeurs de sotie de l'Arduino d'envoyer un "@" par exemple pour définir le commencement de la prise de données.
+
+Cinquième étape :
+réussir à définir combien de jauges peut-on mettre en parallèle pour définir un maximum et aussi définir quel élément est bloquant.
+
+Sixième étape :
+
+
+Septième étape :
+mettre les 8 jauges et réfléchir à un nouveau prototype pour les fixer.
+
+Bonus :
+rajouter un signal sinusoïdal entre l'amplificateur et le filtre analogique, ce qui permettra une plus grande précision au niveau de l'ADC avec plus de valeurs possibles au niveau du signal qui sera envoyé vers l'ordinateur.
